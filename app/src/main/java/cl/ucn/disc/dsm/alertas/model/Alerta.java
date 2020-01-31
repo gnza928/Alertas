@@ -7,7 +7,6 @@ package cl.ucn.disc.dsm.alertas.model;
 public class Alerta {
   private int state;
   private String utcTime;
-  private String localTime;
   private String chileanTime;
   private String reference;
   private Float magnitude;
@@ -19,12 +18,13 @@ public class Alerta {
   private String url;
   private String source;
 
-  public Alerta(int state, String utcTime, String localTime, String chileanTime,
+
+
+  public Alerta(int state, String utcTime, String chileanTime,
       String reference, Float magnitude, String scale, Float latitude, Float longitude,
       Float depth, Long id, String url, String source) {
     this.state = state;
     this.utcTime = utcTime;
-    this.localTime = localTime;
     this.chileanTime = chileanTime;
     this.reference = reference;
     this.magnitude = magnitude;
@@ -43,10 +43,6 @@ public class Alerta {
 
   public String getUtcTime() {
     return utcTime;
-  }
-
-  public String getLocalTime() {
-    return localTime;
   }
 
   public String getChileanTime() {

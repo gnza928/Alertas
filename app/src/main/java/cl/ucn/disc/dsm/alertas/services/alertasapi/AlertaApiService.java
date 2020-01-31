@@ -85,11 +85,11 @@ public class AlertaApiService implements AlertaService {
       }
 
       // No articles
-      if (theResult.alertas == null) {
+      if (theResult.ultimos_sismos == null) {
         throw new AlertaAPIException("Alertas in AlertasResult was null");
       }
 
-      return theResult.alertas;
+      return theResult.ultimos_sismos;
 
     }  catch (final IOException ex) {
       throw new AlertaAPIException("Can't get the AlertaResult", ex);

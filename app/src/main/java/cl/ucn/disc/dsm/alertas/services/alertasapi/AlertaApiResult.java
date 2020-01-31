@@ -11,6 +11,6 @@ import java.util.List;
 public class AlertaApiResult {
   public String status;
   public long totalResults;
-  public List<Alerta> alertas = new ArrayList<Alerta>();
+  public List<Alerta> ultimos_sismos = new ArrayList<Alerta>();
 
 }
