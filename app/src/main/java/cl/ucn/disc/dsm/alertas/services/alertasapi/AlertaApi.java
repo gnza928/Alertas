@@ -11,9 +11,9 @@ import retrofit2.http.Query;
 
 public interface AlertaApi {
 
-  String BASE_URL = "https://chilealerta.com/api/query/?user=gonzo";
+  String BASE_URL = "https://chilealerta.com/api/query/";
 
-  @GET(BASE_URL)
+  @GET("?user=gonzo")
   Call<AlertaApiResult> getUltimasAlertas(
-      @Query("select") final String ultimos_sismos);
+      @Query("select") final String select);
 }

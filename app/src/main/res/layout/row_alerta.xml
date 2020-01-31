@@ -46,20 +46,21 @@
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextLarge"
         tools:text="@tools:sample/lorem" />
+      <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextLarge"
+        tools:text="@tools:sample/lorem" />
+
+      <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextLarge"
+        tools:text="@tools:sample/date/ddmmyy" />
     </LinearLayout>
   </LinearLayout>
-  <TextView
-    android:id="@+id/tv_latitude"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textAppearance="@style/TextLarge"
-    tools:text="@tools:sample/lorem" />
 
-  <TextView
-    android:id="@+id/tv_longitude"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textAppearance="@style/TextLarge"
-    tools:text="@tools:sample/date/ddmmyy" />
 
 </LinearLayout>

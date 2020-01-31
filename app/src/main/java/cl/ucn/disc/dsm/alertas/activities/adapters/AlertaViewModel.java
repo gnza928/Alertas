@@ -25,7 +25,7 @@ public class AlertaViewModel extends ViewModel {
 
   private AlertaService alertaService = new AlertaApiService();
 
-  public LiveData<List<Alerta>> getNoticias() {
+  public LiveData<List<Alerta>> getAlertas() {
     return this.theAlertas;
   }
 

@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
       this.alertaAdapter = new AlertaAdapter();
 
       // The Adapter
-      this.binding.rvNoticias.setAdapter(this.alertaAdapter);
+      this.binding.rvAlertas.setAdapter(this.alertaAdapter);
 
       // The layout (ListView)
-      this.binding.rvNoticias.setLayoutManager(new LinearLayoutManager(this));
+      this.binding.rvAlertas.setLayoutManager(new LinearLayoutManager(this));
 
       // The separator (line)
-      this.binding.rvNoticias.addItemDecoration(
+      this.binding.rvAlertas.addItemDecoration(
           new DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
       );
 
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
               this.binding.swlRefresh.setRefreshing(false);
 
               // Show a message.
-              Toasty.success(this, "Noticias fetched: " + size, Toast.LENGTH_SHORT, true).show();
+              Toasty.success(this, "Alertas fetched: " + size, Toast.LENGTH_SHORT, true).show();
 
             });
           }
@@ -104,9 +104,9 @@ public class MainActivity extends AppCompatActivity {
     {
       this.alertaViewModel = new ViewModelProvider(this).get(AlertaViewModel.class);
 
-      // Observe the list of noticia
-      this.alertaViewModel.getNoticias().observe(this,
-          noticias -> this.alertaAdapter.setAlertas(noticias));
+
+      this.alertaViewModel.getAlertas().observe(this,
+          alertas -> this.alertaAdapter.setAlertas(alertas));
 
       // Observe the exception
       this.alertaViewModel.getException().observe(this, this::showException);

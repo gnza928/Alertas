@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface AlertaService {
 
-  List<Alerta> getAlertas(final int pageSize);
+  public List<Alerta> getAlertas(final int pageSize);
 
 
 }

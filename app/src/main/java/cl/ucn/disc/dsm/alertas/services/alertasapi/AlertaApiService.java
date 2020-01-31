@@ -22,7 +22,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public final class AlertaApiService implements AlertaService {
+public class AlertaApiService implements AlertaService {
   private static final Logger log = LoggerFactory.getLogger(AlertaApiService.class);
 
   private final AlertaApi alertaApi;
@@ -71,7 +71,7 @@ public final class AlertaApiService implements AlertaService {
 
         // Error!
         throw new AlertaAPIException(
-            "Can't get the NewsResult, code: " + response.code(),
+            "Can't get the AlertaApiResult, code: " + response.code(),
             new HttpException(response)
         );
 
@@ -97,7 +97,7 @@ public final class AlertaApiService implements AlertaService {
 
   }
 
-  public List<Alerta> getAlertas(int pageSize) {
+  public List<Alerta> getAlertas(final int pageSize) {
 
     // the Call
     final Call<AlertaApiResult> theCall = this.alertaApi.getUltimasAlertas("ultimos_sismos");
