@@ -30,12 +30,14 @@ public class AlertaViewHolder extends RecyclerView.ViewHolder{
 
   public void bind(final Alerta alerta) {
 
-    this.binding.tvMagnitude.setText(String.valueOf(alerta.getMagnitude()));
+    this.binding.tvMagnitude.setText(new StringBuilder().append("Magnitude: ").append(String.valueOf(alerta.getMagnitude())).toString());
     this.binding.tvReference.setText(alerta.getReference());
-    this.binding.tvLatitude.setText(String.valueOf(alerta.getLatitude()));
-    this.binding.tvLongitude.setText(String.valueOf(alerta.getLongitude()));
-    this.binding.tvScale.setText(alerta.getScale());
-    this.binding.tvChileanTime.setText(alerta.getChileanTime());
-
+    this.binding.tvLatitude.setText(new StringBuilder().append("Latitude: ").append(String.valueOf(alerta.getLatitude())).toString());
+    this.binding.tvLongitude.setText(new StringBuilder().append("Longitude: ").append(String.valueOf(alerta.getLongitude())).toString());
+    this.binding.tvScale.setText(new StringBuilder().append("Scale: ").append(String.valueOf(alerta.getScale())).toString());
+    this.binding.tvChileanTime.setText(new StringBuilder().append("Chilean Time: ").append(String.valueOf(alerta.getChilean_time())).toString());
+    this.binding.tvUtcTime.setText(new StringBuilder().append("UCT Time: ").append(String.valueOf(alerta.getChilean_time())).toString());
+    this.binding.tvSource.setText(new StringBuilder().append("Source: ").append(String.valueOf(alerta.getSource())).toString());
+    this.binding.tvDepth.setText(new StringBuilder().append("Depth: ").append(String.valueOf(alerta.getDepth())).toString());
   }
 }

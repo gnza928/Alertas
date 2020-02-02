@@ -11,10 +11,6 @@
   android:orientation="vertical">
 
 
-  <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
     <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -22,14 +18,15 @@
 
       <TextView
         android:id="@+id/tv_reference"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextMedium"
+        android:textAppearance="@style/TextLarge"
+        android:textSize="24sp"
         tools:text="@tools:sample/full_names" />
 
       <TextView
         android:id="@+id/tv_chileanTime"
-        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextMedium"
@@ -37,7 +34,6 @@
 
       <TextView
         android:id="@+id/tv_utcTime"
-        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextMedium"
@@ -57,8 +53,10 @@
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextMedium"
         tools:text="@tools:sample/lorem" />
+
       <TextView
         android:id="@+id/tv_latitude"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextMedium"
@@ -66,10 +64,20 @@
 
       <TextView
         android:id="@+id/tv_longitude"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextMedium"
         tools:text="@tools:sample/date/ddmmyy" />
+
+      <TextView
+        android:id="@+id/tv_depth"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextMedium"
+        tools:text="@tools:sample/full_names" />
+
       <TextView
         android:id="@+id/tv_source"
         android:layout_width="match_parent"
@@ -77,28 +85,8 @@
         android:textAppearance="@style/TextMedium"
         tools:text="@tools:sample/full_names" />
 
-      <TextView
-        android:id="@+id/tv_url"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextMedium"
-        tools:text="@tools:sample/full_names" />
-
-      <TextView
-        android:id="@+id/tv_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextMedium"
-        tools:text="@tools:sample/full_names" />
-
-      <TextView
-        android:id="@+id/tv_depth"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextMedium"
-        tools:text="@tools:sample/full_names" />
     </LinearLayout>
-  </LinearLayout>
+
 
 
 </LinearLayout>

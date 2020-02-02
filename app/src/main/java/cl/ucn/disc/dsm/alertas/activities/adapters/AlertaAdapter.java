@@ -4,21 +4,16 @@
 
 package cl.ucn.disc.dsm.alertas.activities.adapters;
 
-import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import cl.ucn.disc.dsm.alertas.R;
-import cl.ucn.disc.dsm.alertas.databinding.PopupImageBinding;
 import cl.ucn.disc.dsm.alertas.databinding.RowAlertaBinding;
 import cl.ucn.disc.dsm.alertas.model.Alerta;
 import java.util.ArrayList;
 import java.util.List;
-import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -101,6 +96,7 @@ public class AlertaAdapter extends RecyclerView.Adapter<AlertaViewHolder>{
 
   /**
    * Return the stable ID for the item at position.
+   * @return
    */
   @Override
   public long getItemId(int position) {
