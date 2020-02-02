@@ -26,20 +26,6 @@
         tools:text="@tools:sample/full_names" />
 
       <TextView
-        android:id="@+id/tv_chileanTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextMedium"
-        tools:text="@tools:sample/cities" />
-
-      <TextView
-        android:id="@+id/tv_utcTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextMedium"
-        tools:text="@tools:sample/lorem" />
-
-      <TextView
         android:id="@+id/tv_magnitude"
         android:textStyle="bold"
         android:layout_width="match_parent"
@@ -77,6 +63,20 @@
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextMedium"
         tools:text="@tools:sample/full_names" />
+
+      <TextView
+        android:id="@+id/tv_chileanTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextMedium"
+        tools:text="@tools:sample/cities" />
+
+      <TextView
+        android:id="@+id/tv_utcTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextMedium"
+        tools:text="@tools:sample/lorem" />
 
       <TextView
         android:id="@+id/tv_source"

@@ -1,5 +1,5 @@
 <resources>
   <string name="app_name">@string/title</string>
   <string name="title">AlertasChile</string>
-  <string name="subtitle">Alertas de chilealerta.com</string>
+  <string name="subtitle">Alertas from chilealerta.com</string>
 </resources>
