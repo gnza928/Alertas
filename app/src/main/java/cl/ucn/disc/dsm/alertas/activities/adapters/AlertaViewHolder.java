@@ -36,7 +36,7 @@ public class AlertaViewHolder extends RecyclerView.ViewHolder{
     this.binding.tvLongitude.setText(new StringBuilder().append("Longitude: ").append(String.valueOf(alerta.getLongitude())).toString());
     this.binding.tvScale.setText(new StringBuilder().append("Scale: ").append(String.valueOf(alerta.getScale())).toString());
     this.binding.tvChileanTime.setText(new StringBuilder().append("Chilean Time: ").append(String.valueOf(alerta.getChilean_time())).toString());
-    this.binding.tvUtcTime.setText(new StringBuilder().append("UCT Time: ").append(String.valueOf(alerta.getChilean_time())).toString());
+    this.binding.tvUtcTime.setText(new StringBuilder().append("UTC Time: ").append(String.valueOf(alerta.getUtc_time())).toString());
     this.binding.tvSource.setText(new StringBuilder().append("Source: ").append(String.valueOf(alerta.getSource())).toString());
     this.binding.tvDepth.setText(new StringBuilder().append("Depth: ").append(String.valueOf(alerta.getDepth())).toString());
   }
